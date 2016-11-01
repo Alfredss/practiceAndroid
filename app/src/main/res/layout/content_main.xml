@@ -45,4 +45,9 @@
         android:layout_height="wrap_content"
         android:text="Toggle"
         android:id="@+id/btntoggle"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ScrollView"
+        android:id="@+id/btnScrollView"/>
 </LinearLayout>

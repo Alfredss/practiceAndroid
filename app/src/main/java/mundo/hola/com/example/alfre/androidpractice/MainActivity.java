@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button botonRadioButon;
     Button botonSpinner;
     Button botonToggle;
+    Button botonScrollView;
     EditText edit;
 
     @Override
@@ -53,6 +54,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //boton toggle
         botonToggle = (Button) findViewById(R.id.btntoggle);
         botonToggle.setOnClickListener(this);
+
+        //boton scroll view
+        botonScrollView = (Button) findViewById(R.id.btnScrollView);
+        botonScrollView.setOnClickListener(this);
+
+
+
         edit = (EditText) findViewById(R.id.edt);
     }
 
@@ -100,6 +108,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Intent intent04 = new Intent(this, MainToggleActivity.class);
                 startActivity(intent04);
                 break;
+            case R.id.btnScrollView:
+                Intent intent05 = new Intent(this, MainScrollViewActivity.class);
+                startActivity(intent05);
             default:
                 break;
         }

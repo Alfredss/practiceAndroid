@@ -13,6 +13,7 @@
     <string name="title_activity_main3">Main3Activity</string>
     <string name="title_activity_main_spinner">MainSpinnerActivity</string>
     <string name="title_activity_main_toggle">MainToggleActivity</string>
+    <string name="title_activity_main_scroll_view">MainScrollViewActivity</string>
 
 
 </resources>
