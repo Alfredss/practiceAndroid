@@ -10,34 +10,25 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="mundo.hola.com.example.alfre.androidpractice.MainActivity"
-    tools:showIn="@layout/activity_main">
+    tools:context="mundo.hola.com.example.alfre.androidpractice.MainSpinnerActivity"
+    tools:showIn="@layout/activity_main_spinner">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/ventana1"
-        android:id="@+id/titulo01"/>
+        android:id="@+id/txtspinner"
+        android:text="Spinner"/>
 
-    <EditText
+    <Spinner
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/edt"/>
+        android:id="@+id/spinner">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/irventana2"
-        android:id="@+id/irventana2"/>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/radiobuttons"
-        android:id="@+id/bradiobuton"/>
+    </Spinner>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Spinner"
-        android:id="@+id/btnSpinner"/>
+        android:text="regresar"
+        android:id="@+id/spinnerbtn"/>
 </LinearLayout>

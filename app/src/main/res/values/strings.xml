@@ -11,6 +11,7 @@
     <string name="irventana2">Ir Ventana 02</string>
     <string name="irventana1">Ir Ventana 01</string>
     <string name="title_activity_main3">Main3Activity</string>
+    <string name="title_activity_main_spinner">MainSpinnerActivity</string>
 
 
 </resources>

@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     //instanciamos
     Button boton;
     Button botonRadioButon;
+    Button botonSpinner;
     EditText edit;
 
     @Override
@@ -40,8 +41,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         boton = (Button) findViewById(R.id.irventana2);
         boton.setOnClickListener(this);
 
+        //boton radiogroup
         botonRadioButon = (Button) findViewById(R.id.bradiobuton);
         botonRadioButon.setOnClickListener(this);
+
+        //boton spinner
+        botonSpinner = (Button) findViewById(R.id.btnSpinner);
+        botonSpinner.setOnClickListener(this);
 
         edit = (EditText) findViewById(R.id.edt);
     }
@@ -81,6 +87,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.bradiobuton:
                 Intent intent02 = new Intent(this, Main3Activity.class);
                 startActivity(intent02);
+                break;
+            case R.id.btnSpinner:
+                Intent intent03 = new Intent(this, MainSpinnerActivity.class);
+                startActivity(intent03);
                 break;
             default:
                 break;
