@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button botonSpinner;
     Button botonToggle;
     Button botonScrollView;
+    Button botonHorizontalScrollView;
     EditText edit;
 
     @Override
@@ -59,6 +60,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         botonScrollView = (Button) findViewById(R.id.btnScrollView);
         botonScrollView.setOnClickListener(this);
 
+        //boton horizontal scroll view
+        botonHorizontalScrollView = (Button) findViewById(R.id.btnHorizontalScrollView);
+        botonHorizontalScrollView.setOnClickListener(this);
 
 
         edit = (EditText) findViewById(R.id.edt);
@@ -111,6 +115,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btnScrollView:
                 Intent intent05 = new Intent(this, MainScrollViewActivity.class);
                 startActivity(intent05);
+                break;
+            case R.id.btnHorizontalScrollView:
+                Intent intent06 = new Intent(this, MainHorizontalScrollViewActivity.class);
+                startActivity(intent06);
             default:
                 break;
         }

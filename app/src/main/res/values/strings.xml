@@ -14,6 +14,8 @@
     <string name="title_activity_main_spinner">MainSpinnerActivity</string>
     <string name="title_activity_main_toggle">MainToggleActivity</string>
     <string name="title_activity_main_scroll_view">MainScrollViewActivity</string>
+    <string name="title_activity_main_horizontal_scroll_view">MainHorizontalScrollViewActivity
+    </string>
 
 
 </resources>
