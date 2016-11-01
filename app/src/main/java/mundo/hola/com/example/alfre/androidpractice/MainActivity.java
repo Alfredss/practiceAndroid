@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button botonToggle;
     Button botonScrollView;
     Button botonHorizontalScrollView;
+    Button botonCuadroDialogo;
     EditText edit;
 
     @Override
@@ -64,7 +65,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         botonHorizontalScrollView = (Button) findViewById(R.id.btnHorizontalScrollView);
         botonHorizontalScrollView.setOnClickListener(this);
 
-
+        //cuadro de dialogo
+        botonCuadroDialogo = (Button) findViewById(R.id.btncuadrodialogo);
+        botonCuadroDialogo.setOnClickListener(this);
         edit = (EditText) findViewById(R.id.edt);
     }
 
@@ -119,6 +122,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btnHorizontalScrollView:
                 Intent intent06 = new Intent(this, MainHorizontalScrollViewActivity.class);
                 startActivity(intent06);
+                break;
+            case R.id.btncuadrodialogo:
+                Intent intent07 = new Intent(this, MainCuadroDialogoActivity.class);
+                startActivity(intent07);
+                break;
             default:
                 break;
         }

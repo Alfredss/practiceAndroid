@@ -56,4 +56,10 @@
         android:layout_height="wrap_content"
         android:text="Horizontal Scroll View"
         android:id="@+id/btnHorizontalScrollView"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cuadro de Dialogo"
+        android:id="@+id/btncuadrodialogo"/>
 </LinearLayout>

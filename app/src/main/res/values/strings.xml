@@ -16,6 +16,7 @@
     <string name="title_activity_main_scroll_view">MainScrollViewActivity</string>
     <string name="title_activity_main_horizontal_scroll_view">MainHorizontalScrollViewActivity
     </string>
+    <string name="title_activity_main_cuadro_dialogo">MainCuadroDialogoActivity</string>
 
 
 </resources>
