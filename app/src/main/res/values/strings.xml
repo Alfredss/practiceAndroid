@@ -8,6 +8,12 @@
     <string name="radiobuttons">RadioButtons</string>
     <string name="regresar">volver principal</string>
 
+    <string name="cbrojo">Red</string>
+    <string name="cbazul">Blue</string>
+    <string name="cbverde">Green</string>
+    <string name="cbrosado">Pink</string>
+    <string name="cbamarillo">Yellow</string>
+
     <string name="irventana2">Ir Ventana 02</string>
     <string name="irventana1">Ir Ventana 01</string>
     <string name="title_activity_main3">Main3Activity</string>
@@ -18,6 +24,7 @@
     </string>
     <string name="title_activity_main_cuadro_dialogo">MainCuadroDialogoActivity</string>
     <string name="title_activity_main_dialog_image">MainDialogImageActivity</string>
+    <string name="title_activity_main_check_box">MainCheckBoxActivity</string>
 
 
 </resources>
