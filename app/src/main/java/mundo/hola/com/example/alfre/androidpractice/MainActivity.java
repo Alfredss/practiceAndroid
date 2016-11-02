@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button botonCuadroDialogo;
     Button botonDialogImage;
     Button botonCheckBox;
+    Button botonAutocompleted;
     EditText edit;
 
     @Override
@@ -79,6 +80,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //CheckBox
         botonCheckBox = (Button) findViewById(R.id.btnCheckBox);
         botonCheckBox.setOnClickListener(this);
+
+        //Autocompleted TextView
+        botonAutocompleted = (Button) findViewById(R.id.btnAutocompleted);
+        botonAutocompleted.setOnClickListener(this);
     }
 
     @Override
@@ -144,6 +149,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btnCheckBox:
                 Intent intent8 = new Intent(this, MainCheckBoxActivity.class);
                 startActivity(intent8);
+                break;
+            case R.id.btnAutocompleted:
+                Intent intent9 = new Intent(this, MainAutocompletedTVActivity.class);
+                startActivity(intent9);
             default:
                 break;
         }

@@ -82,6 +82,12 @@
                 android:layout_height="wrap_content"
                 android:text="CheckBox"
                 android:id="@+id/btnCheckBox"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Autocompleted TextView"
+                android:id="@+id/btnAutocompleted"/>
         </LinearLayout>
     </ScrollView>
 
