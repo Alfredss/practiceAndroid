@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button botonCheckBox;
     Button botonAutocompleted;
     Button botonHorizontal;
+    Button botonVertical;
     EditText edit;
 
     @Override
@@ -89,6 +90,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //Horizontal
         botonHorizontal = (Button) findViewById(R.id.btnHorizontal);
         botonHorizontal.setOnClickListener(this);
+
+        //vertical
+        botonVertical = (Button) findViewById(R.id.btnVertical);
+        botonVertical.setOnClickListener(this);
     }
 
     @Override
@@ -163,6 +168,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Intent intent10 = new Intent(this, MainHorizontalActivity.class);
                 startActivity(intent10);
                 break;
+            case R.id.btnVertical:
+                Intent intent11 = new Intent(this, MainVerticalActivity.class);
+                startActivity(intent11);
             default:
                 break;
         }
