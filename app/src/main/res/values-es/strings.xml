@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">AndroidPractice</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="ventana1">ventana01</string>
+    <string name="ventana2">ventana02</string>
+    <string name="dato"></string>
+    <string name="radiobuttons">RadioButtons</string>
+    <string name="regresar">volver principal</string>
+
+    <string name="cbrojo">Red</string>
+    <string name="cbazul">Blue</string>
+    <string name="cbverde">Green</string>
+    <string name="cbrosado">Pink</string>
+    <string name="cbamarillo">Yellow</string>
+
+    <string name="irventana2">Ir Ventana 02</string>
+    <string name="irventana1">Ir Ventana 01</string>
+    <string name="title_activity_main3">Main3Activity</string>
+    <string name="title_activity_main_spinner">MainSpinnerActivity</string>
+    <string name="title_activity_main_toggle">MainToggleActivity</string>
+    <string name="title_activity_main_scroll_view">MainScrollViewActivity</string>
+    <string name="title_activity_main_horizontal_scroll_view">MainHorizontalScrollViewActivity
+    </string>
+    <string name="title_activity_main_cuadro_dialogo">MainCuadroDialogoActivity</string>
+    <string name="title_activity_main_dialog_image">MainDialogImageActivity</string>
+    <string name="title_activity_main_check_box">MainCheckBoxActivity</string>
+    <string name="title_activity_main_autocompleted_tv">MainAutocompletedTVActivity</string>
+
+
+</resources>
