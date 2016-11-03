@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button botonHorizontal;
     Button botonVertical;
     Button botonPremisos;
+    Button botonListView;
     EditText edit;
 
     @Override
@@ -99,6 +100,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //permisos en android
         botonPremisos = (Button) findViewById(R.id.btnPermisos);
         botonPremisos.setOnClickListener(this);
+
+        //ListView
+        botonListView = (Button) findViewById(R.id.btnListView);
+        botonListView.setOnClickListener(this);
     }
 
     @Override
@@ -180,6 +185,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btnPermisos:
                 Intent intent12 = new Intent(this, MainPermisosActivity.class);
                 startActivity(intent12);
+                break;
+            case R.id.btnListView:
+                Intent intent13 = new Intent(this, MainListViewActivity.class);
+                startActivity(intent13);
+                break;
             default:
                 break;
         }

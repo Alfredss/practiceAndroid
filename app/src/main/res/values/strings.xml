@@ -29,6 +29,7 @@
     <string name="title_activity_main_horizontal">MainHorizontalActivity</string>
     <string name="title_activity_main_vertical">MainVerticalActivity</string>
     <string name="title_activity_main_permisos">MainPermisosActivity</string>
+    <string name="title_activity_main_list_view">MainListViewActivity</string>
 
 
 </resources>
