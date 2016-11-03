@@ -118,6 +118,18 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MainHorizontalActivity"
+            android:label="@string/title_activity_main_horizontal"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="landscape"
+            android:configChanges="orientation|keyboardHidden"> <!--- fuerza a que se vea en horizontal-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAINHORIZONTALACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

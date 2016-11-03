@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button botonDialogImage;
     Button botonCheckBox;
     Button botonAutocompleted;
+    Button botonHorizontal;
     EditText edit;
 
     @Override
@@ -84,6 +85,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //Autocompleted TextView
         botonAutocompleted = (Button) findViewById(R.id.btnAutocompleted);
         botonAutocompleted.setOnClickListener(this);
+
+        //Horizontal
+        botonHorizontal = (Button) findViewById(R.id.btnHorizontal);
+        botonHorizontal.setOnClickListener(this);
     }
 
     @Override
@@ -153,6 +158,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btnAutocompleted:
                 Intent intent9 = new Intent(this, MainAutocompletedTVActivity.class);
                 startActivity(intent9);
+                break;
+            case R.id.btnHorizontal:
+                Intent intent10 = new Intent(this, MainHorizontalActivity.class);
+                startActivity(intent10);
+                break;
             default:
                 break;
         }

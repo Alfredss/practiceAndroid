@@ -26,6 +26,7 @@
     <string name="title_activity_main_dialog_image">MainDialogImageActivity</string>
     <string name="title_activity_main_check_box">MainCheckBoxActivity</string>
     <string name="title_activity_main_autocompleted_tv">MainAutocompletedTVActivity</string>
+    <string name="title_activity_main_horizontal">MainHorizontalActivity</string>
 
 
 </resources>
