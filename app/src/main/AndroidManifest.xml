@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="mundo.hola.com.example.alfre.androidpractice">
 
+    <!--ESTABLECEMOS PERMISOS-->
+    <uses-permission android:name="android.permission.INTERNET">internet</uses-permission>
+    <uses-permission android:name="android.permission.BLUETOOTH">bluetooth</uses-permission>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/pinterest"
@@ -132,12 +136,22 @@
         </activity>
         <activity
             android:name=".MainVerticalActivity"
+            android:configChanges="orientation|keyboardHidden"
             android:label="@string/title_activity_main_vertical"
-            android:theme="@style/AppTheme.NoActionBar"
             android:screenOrientation="portrait"
-            android:configChanges="orientation|keyboardHidden">
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAINVERTICALACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainPermisosActivity"
+            android:label="@string/title_activity_main_permisos"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAINPERMISOSACTIVITY" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>

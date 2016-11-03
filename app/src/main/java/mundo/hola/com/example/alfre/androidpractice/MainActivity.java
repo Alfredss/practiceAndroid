@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button botonAutocompleted;
     Button botonHorizontal;
     Button botonVertical;
+    Button botonPremisos;
     EditText edit;
 
     @Override
@@ -94,6 +95,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //vertical
         botonVertical = (Button) findViewById(R.id.btnVertical);
         botonVertical.setOnClickListener(this);
+
+        //permisos en android
+        botonPremisos = (Button) findViewById(R.id.btnPermisos);
+        botonPremisos.setOnClickListener(this);
     }
 
     @Override
@@ -171,6 +176,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btnVertical:
                 Intent intent11 = new Intent(this, MainVerticalActivity.class);
                 startActivity(intent11);
+                break;
+            case R.id.btnPermisos:
+                Intent intent12 = new Intent(this, MainPermisosActivity.class);
+                startActivity(intent12);
             default:
                 break;
         }
