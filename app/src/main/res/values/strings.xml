@@ -32,6 +32,7 @@
     <string name="title_activity_main_permisos">MainPermisosActivity</string>
     <string name="title_activity_main_list_view">MainListViewActivity</string>
     <string name="title_activity_main_list_view_custom">MainListViewCustomActivity</string>
+    <string name="title_activity_main_web_view">MainWebViewActivity</string>
 
 
 </resources>

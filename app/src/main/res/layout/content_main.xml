@@ -118,6 +118,12 @@
                 android:layout_height="wrap_content"
                 android:text="ListView Personalizado"
                 android:id="@+id/btnPersonalizado"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WebView"
+                android:id="@+id/btnWebView"/>
         </LinearLayout>
     </ScrollView>
 

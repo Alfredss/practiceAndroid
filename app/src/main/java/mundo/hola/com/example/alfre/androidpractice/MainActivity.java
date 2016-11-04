@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button botonPremisos;
     Button botonListView;
     Button botonPersonalizado;
+    Button botonWebView;
     EditText edit;
 
     @Override
@@ -109,6 +110,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //ListView Personalizado
         botonPersonalizado = (Button) findViewById(R.id.btnPersonalizado);
         botonPersonalizado.setOnClickListener(this);
+
+        //WebView
+        botonWebView = (Button) findViewById(R.id.btnWebView);
+        botonWebView.setOnClickListener(this);
     }
 
     @Override
@@ -198,6 +203,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btnPersonalizado:
                 Intent intent14 = new Intent(this, MainListViewCustomActivity.class);
                 startActivity(intent14);
+                break;
+            case R.id.btnWebView:
+                Intent intent15 = new Intent(this, MainWebViewActivity.class);
+                startActivity(intent15);
             default:
                 break;
         }
