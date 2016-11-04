@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button botonVertical;
     Button botonPremisos;
     Button botonListView;
+    Button botonPersonalizado;
     EditText edit;
 
     @Override
@@ -104,6 +105,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //ListView
         botonListView = (Button) findViewById(R.id.btnListView);
         botonListView.setOnClickListener(this);
+
+        //ListView Personalizado
+        botonPersonalizado = (Button) findViewById(R.id.btnPersonalizado);
+        botonPersonalizado.setOnClickListener(this);
     }
 
     @Override
@@ -190,6 +195,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Intent intent13 = new Intent(this, MainListViewActivity.class);
                 startActivity(intent13);
                 break;
+            case R.id.btnPersonalizado:
+                Intent intent14 = new Intent(this, MainListViewCustomActivity.class);
+                startActivity(intent14);
             default:
                 break;
         }

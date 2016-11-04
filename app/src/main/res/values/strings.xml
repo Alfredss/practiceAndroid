@@ -7,6 +7,7 @@
     <string name="dato"></string>
     <string name="radiobuttons">RadioButtons</string>
     <string name="regresar">volver principal</string>
+    <string name="encabezado">Encabezado</string>
 
     <string name="cbrojo">Red</string>
     <string name="cbazul">Blue</string>
@@ -30,6 +31,7 @@
     <string name="title_activity_main_vertical">MainVerticalActivity</string>
     <string name="title_activity_main_permisos">MainPermisosActivity</string>
     <string name="title_activity_main_list_view">MainListViewActivity</string>
+    <string name="title_activity_main_list_view_custom">MainListViewCustomActivity</string>
 
 
 </resources>
