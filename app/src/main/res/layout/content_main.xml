@@ -124,6 +124,12 @@
                 android:layout_height="wrap_content"
                 android:text="WebView"
                 android:id="@+id/btnWebView"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WebView HTML"
+                android:id="@+id/btnWebHtml"/>
+
         </LinearLayout>
     </ScrollView>
 
