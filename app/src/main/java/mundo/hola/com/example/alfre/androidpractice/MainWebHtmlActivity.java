@@ -34,7 +34,12 @@ public class MainWebHtmlActivity extends AppCompatActivity implements View.OnCli
         boton.setOnClickListener(this);
 
         webView = (WebView) findViewById(R.id.wvHtml);
+
+        webView.getSettings().setJavaScriptEnabled(true);
+        webView.getSettings().setBuiltInZoomControls(true);
+
         webView.loadUrl("file:///android_asset/index.html");
+
         webView.setWebViewClient(new WebViewClient(){
             public boolean shouldOverrideUrlLoading(WebView view, String url){
                 return false;
