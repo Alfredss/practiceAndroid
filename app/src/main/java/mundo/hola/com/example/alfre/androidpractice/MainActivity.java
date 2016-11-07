@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button botonPersonalizado;
     Button botonWebView;
     Button botonWebHtml;
+    Button botonMediaPlayer;
     EditText edit;
 
     @Override
@@ -119,6 +120,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //WebView con HTML
         botonWebHtml = (Button) findViewById(R.id.btnWebHtml);
         botonWebHtml.setOnClickListener(this);
+
+        //Media Player
+        botonMediaPlayer = (Button) findViewById(R.id.btnMediaPlayer);
+        botonMediaPlayer.setOnClickListener(this);
     }
 
     @Override
@@ -216,6 +221,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btnWebHtml:
                 Intent intent16 = new Intent(this, MainWebHtmlActivity.class);
                 startActivity(intent16);
+                break;
+            case R.id.btnMediaPlayer:
+                Intent intent17 = new Intent(this, MainMediaPlayerActivity.class);
+                startActivity(intent17);
                 break;
             default:
                 break;
