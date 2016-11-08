@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button botonWebHtml;
     Button botonMediaPlayer;
     Button botonTableLayout;
+    Button botonTextWatcher;
     EditText edit;
 
     @Override
@@ -129,6 +130,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //Table Layout
         botonTableLayout =(Button) findViewById(R.id.btnTableLayout);
         botonTableLayout.setOnClickListener(this);
+
+        //TextWatcher
+        botonTextWatcher = (Button) findViewById(R.id.btnTextWatcher);
+        botonTextWatcher.setOnClickListener(this);
 
 
     } //nos dice quien es el XML de nuestra actividad
@@ -247,6 +252,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btnTableLayout:
                 Intent intent18 = new Intent(this, MainTableLayoutActivity.class);
                 startActivity(intent18);
+                break;
+            case R.id.btnTextWatcher:
+                Intent intent19 = new Intent(this, MainTextWatcherActivity.class);
+                startActivity(intent19);
+                break;
             default:
                 break;
         }

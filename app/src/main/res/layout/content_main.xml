@@ -141,6 +141,12 @@
                 android:text="TableLayout"
                 android:id="@+id/btnTableLayout"/>
 
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextWatcher"
+                android:id="@+id/btnTextWatcher"/>
+
         </LinearLayout>
     </ScrollView>
 
