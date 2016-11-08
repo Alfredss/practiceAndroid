@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button botonWebView;
     Button botonWebHtml;
     Button botonMediaPlayer;
+    Button botonTableLayout;
     EditText edit;
 
     @Override
@@ -124,7 +125,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //Media Player
         botonMediaPlayer = (Button) findViewById(R.id.btnMediaPlayer);
         botonMediaPlayer.setOnClickListener(this);
-    }
+
+        //Table Layout
+        botonTableLayout =(Button) findViewById(R.id.btnTableLayout);
+        botonTableLayout.setOnClickListener(this);
+
+
+    } //nos dice quien es el XML de nuestra actividad
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -226,6 +233,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Intent intent17 = new Intent(this, MainMediaPlayerActivity.class);
                 startActivity(intent17);
                 break;
+            case R.id.btnTableLayout:
+                Intent intent18 = new Intent(this, MainTableLayoutActivity.class);
+                startActivity(intent18);
             default:
                 break;
         }

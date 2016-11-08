@@ -35,6 +35,7 @@
     <string name="title_activity_main_web_view">MainWebViewActivity</string>
     <string name="title_activity_main_web_html">MainWebHtmlActivity</string>
     <string name="title_activity_main_media_player">MainMediaPlayerActivity</string>
+    <string name="title_activity_main_table_layout">MainTableLayoutActivity</string>
 
 
 </resources>
