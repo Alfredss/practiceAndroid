@@ -163,6 +163,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 String dato = edit.getText().toString();
                 intent.putExtra("dato", dato);
                 startActivity(intent);
+                //usamos intent cuando vamos a enviar pocos datos
+
+                //USANDO BUNDLE
+                Bundle bundle = new Bundle();
+                bundle.putString("nombre","Alfredo");
+                bundle.putInt("id", 10);
+                bundle.putFloat("float", 5);
+
+                bundle.putBundle("bundle", bundle);
+
+                //usamos bundle para enviar una mayor cantidad de datos
                 break;
 
             case R.id.bradiobuton:

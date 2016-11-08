@@ -53,7 +53,8 @@ public class MainMediaPlayerActivity extends AppCompatActivity implements View.O
                 player.pause();
                 break;
             case R.id.btnStop:
-                player.stop();
+                stop();
+
                 break;
             case R.id.mediaplayerbtn:
                 Intent intent = new Intent(this, MainActivity.class);
@@ -63,5 +64,11 @@ public class MainMediaPlayerActivity extends AppCompatActivity implements View.O
                 break;
 
         }
+    }
+    private void stop(){
+        if(player.isPlaying())
+            player.stop();
+        player = MediaPlayer.create(this, R.raw.see_his_love);
+
     }
 }
