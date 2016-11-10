@@ -147,6 +147,12 @@
                 android:text="TextWatcher"
                 android:id="@+id/btnTextWatcher"/>
 
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AutoCompletedTextView2"
+                android:id="@+id/btnAutocompleted2"/>
+
         </LinearLayout>
     </ScrollView>
 

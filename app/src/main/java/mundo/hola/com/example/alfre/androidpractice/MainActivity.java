@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button botonMediaPlayer;
     Button botonTableLayout;
     Button botonTextWatcher;
+    Button botonAutocompleted2;
     EditText edit;
 
     @Override
@@ -135,6 +136,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         botonTextWatcher = (Button) findViewById(R.id.btnTextWatcher);
         botonTextWatcher.setOnClickListener(this);
 
+        //Autocompleted2
+        botonAutocompleted2 = (Button) findViewById(R.id.btnAutocompleted2);
+        botonAutocompleted2.setOnClickListener(this);
 
     } //nos dice quien es el XML de nuestra actividad
 
@@ -256,6 +260,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btnTextWatcher:
                 Intent intent19 = new Intent(this, MainTextWatcherActivity.class);
                 startActivity(intent19);
+                break;
+            case R.id.btnAutocompleted2:
+                Intent intent20 = new Intent(this, MainAutocompletedTV2Activity.class);
+                startActivity(intent20);
                 break;
             default:
                 break;
