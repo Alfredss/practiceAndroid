@@ -38,7 +38,7 @@
     <string name="title_activity_main_table_layout">MainTableLayoutActivity</string>
     <string name="title_activity_main_text_watcher">MainTextWatcherActivity</string>
     <string name="title_activity_main_autocompleted_tv2">MainAutocompletedTV2Activity</string>
-    
+
     <string-array name="meses">
         <item>Enero</item>
         <item>Febrero</item>
@@ -53,5 +53,6 @@
         <item>Noviembre</item>
         <item>Diciembre</item>
     </string-array>
+    <string name="title_activity_main_fragment">MainFragmentActivity</string>
 
 </resources>
