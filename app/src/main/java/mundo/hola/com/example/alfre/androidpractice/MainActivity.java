@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button botonTextWatcher;
     Button botonAutocompleted2;
     Button botonFragment;
+    Button botonCanvas;
     EditText edit;
 
     @Override
@@ -144,6 +145,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //Fragment
         botonFragment = (Button) findViewById(R.id.btnFragment);
         botonFragment.setOnClickListener(this);
+
+        //Paint Canvas
+        botonCanvas = (Button) findViewById(R.id.btnCanvas);
+        botonCanvas.setOnClickListener(this);
 
     } //nos dice quien es el XML de nuestra actividad
 
@@ -273,6 +278,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btnFragment:
                 Intent intent21 = new Intent(this,MainFragmentActivity.class);
                 startActivity(intent21);
+                break;
+            case R.id.btnCanvas:
+                Intent intent22 = new Intent(this, MainPaintCanvasActivity.class);
+                startActivity(intent22);
                 break;
             default:
                 break;
