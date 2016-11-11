@@ -1,6 +1,8 @@
 package mundo.hola.com.example.alfre.androidpractice;
 
 import android.content.Context;
+import android.graphics.Color;
+import android.graphics.Paint;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -33,6 +35,12 @@ public class MainPaintCanvasActivity extends AppCompatActivity {
     class Vista extends View{
         public Vista(Context context){
             super(context);
+        }
+        public void onDraw(){
+            Paint paint = new Paint();
+            paint.setStyle(Paint.Style.STROKE);
+            paint.setStrokeWidth(5);
+            paint.setColor(Color.BLUE);
         }
     }
 
