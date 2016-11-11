@@ -7,4 +7,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="fragment A"/>
+
+    <EditText
+        android:id="@+id/inputFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Escribe Dato"/>
+
+    <Button
+        android:id="@+id/btnEnviaDato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enviar Dato"/>
+
+
 </LinearLayout>
