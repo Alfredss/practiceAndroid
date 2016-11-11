@@ -5,5 +5,5 @@ package mundo.hola.com.example.alfre.androidpractice;
  */
 public interface EnviaMensaje {
 
-    public void enviaDato();
+    public void enviaDato(String mensaje);
 }

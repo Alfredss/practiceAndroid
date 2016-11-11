@@ -1,5 +1,6 @@
 package mundo.hola.com.example.alfre.androidpractice;
 
+import android.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -9,7 +10,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 
-public class MainFragmentActivity extends AppCompatActivity implements View.OnClickListener{
+public class MainFragmentActivity extends AppCompatActivity implements EnviaMensaje{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,11 +28,12 @@ public class MainFragmentActivity extends AppCompatActivity implements View.OnCl
             }
         });
 
-
     }
 
-    @Override
-    public void onClick(View v) {
 
+    @Override
+    public void enviaDato(String mensaje) {
+        FragmentB fragmentB = (FragmentB) getFragmentManager().findFragmentById(R.id.fragmentB);
+        fragmentB.recibir(mensaje);
     }
 }
