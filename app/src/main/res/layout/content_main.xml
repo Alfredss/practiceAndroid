@@ -171,6 +171,12 @@
                 android:layout_height="wrap_content"
                 android:text="Uso de ButterKnife"/>
 
+            <Button
+                android:id="@+id/btnVibrator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vibrador"/>
+
         </LinearLayout>
     </ScrollView>
 

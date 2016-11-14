@@ -3,11 +3,11 @@
     package="mundo.hola.com.example.alfre.androidpractice">
 
     <!-- ESTABLECEMOS PERMISOS -->
-    <uses-permission android:name="android.permission.INTERNET">
-        internet
-    </uses-permission>
-    <uses-permission android:name="android.permission.BLUETOOTH">
-        bluetooth</uses-permission>
+    <uses-permission android:name="android.permission.INTERNET">internet</uses-permission>
+
+    <uses-permission android:name="android.permission.BLUETOOTH">bluetooth</uses-permission>
+
+    <uses-permission android:name="android.permission.VIBRATE">vibrate</uses-permission>
 
     <application
         android:allowBackup="true"
@@ -259,6 +259,16 @@
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAINBUTTERKNIFEACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainVibradorActivity"
+            android:label="@string/title_activity_main_vibrador"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAINVIBRATORACTIVITY" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>

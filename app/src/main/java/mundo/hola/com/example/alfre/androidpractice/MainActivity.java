@@ -54,7 +54,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         startActivity(intent);
     }
 
-
+    //Vibrador
+    @BindView(R.id.btnVibrator) Button botonVibrator;
+    @OnClick(R.id.btnVibrator)
+    public void goToVibrator(){
+        Intent intent = new Intent(this, MainVibradorActivity.class);
+        startActivity(intent);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
