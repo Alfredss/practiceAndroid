@@ -20,14 +20,16 @@ public class MainButterKnifeActivity extends AppCompatActivity {
     @BindView(R.id.tvB) TextView textoB;
 
     @BindView(R.id.btnMsg) Button botonMSG;
+    /*
     @OnClick(R.id.btnMsg)
     public void msg(){
         Toast.makeText(MainButterKnifeActivity.this, "Mensaje de Bienvenida", Toast.LENGTH_SHORT).show();
-    }
+    }*/
 
     @BindView(R.id.btnBK) Button botonRegresar;
-    @OnClick(R.id.btnBK)
-    public void regresar(){
+    @OnClick({R.id.btnBK, R.id.btnMsg})
+    public void regresarAndMsg(){
+        Toast.makeText(MainButterKnifeActivity.this, "Salimos de Butter Knife", Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
