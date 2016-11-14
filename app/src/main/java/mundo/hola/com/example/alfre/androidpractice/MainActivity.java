@@ -12,6 +12,10 @@ import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.EditText;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
     //instanciamos
@@ -38,7 +42,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button botonAutocompleted2;
     Button botonFragment;
     Button botonCanvas;
+
     EditText edit;
+
+
+    //Usando ButterKnife
+    @BindView(R.id.btnButterKnife) Button botonButterKnife;
+    @OnClick(R.id.btnButterKnife)
+    public void goToButterKnife(){
+        Intent intent = new Intent(this, MainButterKnifeActivity.class);
+        startActivity(intent);
+    }
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +62,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        ButterKnife.bind(this);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -149,6 +166,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //Paint Canvas
         botonCanvas = (Button) findViewById(R.id.btnCanvas);
         botonCanvas.setOnClickListener(this);
+
+
 
     } //nos dice quien es el XML de nuestra actividad
 
@@ -283,6 +302,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Intent intent22 = new Intent(this, MainPaintCanvasActivity.class);
                 startActivity(intent22);
                 break;
+
             default:
                 break;
         }

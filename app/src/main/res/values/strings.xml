@@ -55,5 +55,6 @@
     </string-array>
     <string name="title_activity_main_fragment">MainFragmentActivity</string>
     <string name="title_activity_main_paint_canvas">MainPaintCanvasActivity</string>
+    <string name="title_activity_main_butter_knife">MainButterKnifeActivity</string>
 
 </resources>

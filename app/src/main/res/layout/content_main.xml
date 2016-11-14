@@ -165,6 +165,12 @@
                 android:layout_height="wrap_content"
                 android:text="Canvas"/>
 
+            <Button
+                android:id="@+id/btnButterKnife"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Uso de ButterKnife"/>
+
         </LinearLayout>
     </ScrollView>
 
