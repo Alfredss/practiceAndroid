@@ -177,6 +177,12 @@
                 android:layout_height="wrap_content"
                 android:text="Vibrador"/>
 
+            <Button
+                android:id="@+id/btnVibradorRitmico"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vibrador Ritmico"/>
+
         </LinearLayout>
     </ScrollView>
 

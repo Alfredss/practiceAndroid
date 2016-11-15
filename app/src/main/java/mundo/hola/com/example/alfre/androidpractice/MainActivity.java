@@ -62,6 +62,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         startActivity(intent);
     }
 
+    @BindView(R.id.btnVibradorRitmico) Button botonVibradorRitmico;
+    @OnClick(R.id.btnVibradorRitmico)
+    public void vibrarRitmicamente(){
+        Intent intent = new Intent(this, MainVibradorRitmicoActivity.class);
+        startActivity(intent);
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
