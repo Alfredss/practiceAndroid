@@ -6,4 +6,9 @@
     android:orientation="vertical"
     tools:context="mundo.hola.com.example.alfre.androidpractice.MainMenuActivity">
 
+    <Button
+        android:id="@+id/menuBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/regresar"/>
 </LinearLayout>

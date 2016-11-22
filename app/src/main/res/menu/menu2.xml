@@ -2,9 +2,21 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/opcion1"
-        android:title="Opcion 01"/>
+        android:title="Opcion 01">
+        <menu>
+            <item
+                android:id="@+id/opcion1A"
+                android:title="Opcion 1A"/>
+            <item
+                android:id="@+id/opcion1B"
+                android:title="Opcion 1B"/>
+        </menu>
+    </item>
 
     <item
         android:id="@+id/opcion2"
         android:title="Opcion 02"/>
+    <item
+        android:id="@+id/opcion3"
+        android:title="Opcion 03"/>
 </menu>
