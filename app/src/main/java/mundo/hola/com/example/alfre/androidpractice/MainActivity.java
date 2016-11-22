@@ -68,6 +68,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Intent intent = new Intent(this, MainVibradorRitmicoActivity.class);
         startActivity(intent);
     }
+
+    @BindView(R.id.btnLinterna) Button btnLinterna;
+    @OnClick(R.id.btnLinterna)
+    public void goToLinterna(){
+        Intent intent = new Intent(this, MainLinternaActivity.class);
+        startActivity(intent);
+    }
+
+    @BindView(R.id.btnEstilos) Button botonEstilos;
+    @OnClick(R.id.btnEstilos)
+    public void goToEstilos(){
+        Intent intent = new Intent(this, MainEstilosActivity.class);
+        startActivity(intent);
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -183,6 +183,17 @@
                 android:layout_height="wrap_content"
                 android:text="Vibrador Ritmico"/>
 
+            <Button
+                android:id="@+id/btnLinterna"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Linterna"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="aplicando Estiloss"
+                android:id="@+id/btnEstilos"/>
+
         </LinearLayout>
     </ScrollView>
 
