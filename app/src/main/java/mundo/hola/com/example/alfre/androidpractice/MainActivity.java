@@ -83,10 +83,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         startActivity(intent);
     }
 
-    @BindView(R.id.btnTemas) Button btnIr;
+    @BindView(R.id.btnTemas) Button btnTema;
     @OnClick(R.id.btnTemas)
     public void goToTemas(){
         Intent intent = new Intent(this, MainTemasActivity.class);
+        startActivity(intent);
+    }
+
+    @BindView(R.id.btnMenu) Button btnMenu;
+    @OnClick(R.id.btnMenu)
+    public void goToMenu(){
+        Intent intent = new Intent(this, MainMenuActivity.class);
         startActivity(intent);
     }
     @Override
