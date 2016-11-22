@@ -60,5 +60,6 @@
     <string name="title_activity_main_vibrador_ritmico">MainVibradorRitmicoActivity</string>
     <string name="title_activity_main_linterna">MainLinternaActivity</string>
     <string name="title_activity_main_estilos">MainEstilosActivity</string>
+    <string name="title_activity_main_temas">MainTemasActivity</string>
 
 </resources>

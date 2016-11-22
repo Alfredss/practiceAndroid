@@ -191,8 +191,14 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="aplicando Estiloss"
+                android:text="Aplicando Estilos"
                 android:id="@+id/btnEstilos"/>
+
+            <Button
+                android:id="@+id/btnTemas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aplicando Temas"/>
 
         </LinearLayout>
     </ScrollView>

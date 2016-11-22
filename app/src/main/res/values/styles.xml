@@ -6,6 +6,7 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        
     </style>
 
     <style name="AppTheme.NoActionBar">
@@ -25,5 +26,8 @@
         <item name="android:height">70dp</item>
         <item name="android:colorBackground">@android:color/holo_orange_dark</item>
     </style>
+
+    <!--Tema Propio para la actividad MainTemasActivity-->
+
 
 </resources>

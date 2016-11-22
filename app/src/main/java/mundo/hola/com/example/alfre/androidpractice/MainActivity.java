@@ -82,6 +82,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Intent intent = new Intent(this, MainEstilosActivity.class);
         startActivity(intent);
     }
+
+    @BindView(R.id.btnTemas) Button btnIr;
+    @OnClick(R.id.btnTemas)
+    public void goToTemas(){
+        Intent intent = new Intent(this, MainTemasActivity.class);
+        startActivity(intent);
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
