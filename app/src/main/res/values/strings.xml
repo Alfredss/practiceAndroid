@@ -61,5 +61,6 @@
     <string name="title_activity_main_linterna">MainLinternaActivity</string>
     <string name="title_activity_main_estilos">MainEstilosActivity</string>
     <string name="title_activity_main_temas">MainTemasActivity</string>
+    <string name="title_activity_main_tabs">MainTabsActivity</string>
 
 </resources>
