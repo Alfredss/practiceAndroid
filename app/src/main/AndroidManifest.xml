@@ -323,6 +323,15 @@
         <activity
             android:name=".MainTabsActivity"
             android:label="@string/title_activity_main_tabs"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".MainActionBarActivity" />
+        <activity
+            android:name=".MainVideoViewActivity"
+            android:label="@string/title_activity_main_video_view"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainDatePickerActivity"
+            android:label="@string/title_activity_main_date_picker"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

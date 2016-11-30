@@ -96,6 +96,34 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Intent intent = new Intent(this, MainMenuActivity.class);
         startActivity(intent);
     }
+
+    @BindView(R.id.btnTabs) Button btnTabs;
+    @OnClick(R.id.btnTabs)
+    public void goToTabs(){
+        Intent intent = new Intent(this, MainTabsActivity.class);
+        startActivity(intent);
+    }
+
+    @BindView(R.id.btnActionBar) Button btnActionBar;
+    @OnClick(R.id.btnActionBar)
+    public void goToActionBar(){
+        Intent intent = new Intent(this, MainActionBarActivity.class);
+        startActivity(intent);
+    }
+
+    @BindView(R.id.btnVideo) Button btnVideo;
+    @OnClick(R.id.btnVideo)
+    public void goToVideo(){
+        Intent intent = new Intent(this, MainVideoViewActivity.class);
+        startActivity(intent);
+    }
+
+    @BindView(R.id.btnDate) Button btnDate;
+    @OnClick(R.id.btnDate)
+    public void goToDate(){
+        Intent intent = new Intent(this, MainDatePickerActivity.class);
+        startActivity(intent);
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
