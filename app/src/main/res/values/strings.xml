@@ -67,5 +67,6 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_main_video_view">MainVideoViewActivity</string>
     <string name="title_activity_main_date_picker">MainDatePickerActivity</string>
+    <string name="title_activity_main_rating_bar">MainRatingBarActivity</string>
 
 </resources>

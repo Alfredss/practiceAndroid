@@ -332,6 +332,10 @@
         <activity
             android:name=".MainDatePickerActivity"
             android:label="@string/title_activity_main_date_picker"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainRatingBarActivity"
+            android:label="@string/title_activity_main_rating_bar"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

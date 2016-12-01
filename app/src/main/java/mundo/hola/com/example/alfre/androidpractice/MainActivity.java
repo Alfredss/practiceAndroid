@@ -124,6 +124,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Intent intent = new Intent(this, MainDatePickerActivity.class);
         startActivity(intent);
     }
+
+    @BindView(R.id.btnRatingBar) Button ratingBar;
+    @OnClick(R.id.btnRatingBar)
+    public void goToRatingBar(){
+        Intent intent = new Intent(this, MainRatingBarActivity.class);
+        startActivity(intent);
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
