@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="mundo.hola.com.example.alfre.androidpractice">
+    package="mundo.hola.com.example.alfre.androidpractice" >
 
     <!-- ESTABLECEMOS PERMISOS -->
 
@@ -9,22 +9,20 @@
     <uses-feature android:name="android.hardware.camera" />
 
     <uses-permission android:name="android.permission.FLASHLIGHT" />
-    <uses-permission android:name="android.permission.INTERNET">
+    <uses-permission android:name="android.permission.INTERNET" >
         internet
     </uses-permission>
-    <uses-permission android:name="android.permission.VIBRATE">
-        vibrate</uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE" >
+        vibrate
+    </uses-permission>
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/pinterest"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity
-            android:name=".MainActivity"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
+        android:theme="@style/AppTheme" >
+        <activity android:name=".MainSplashScreenActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -32,9 +30,19 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".Main2Activity"
             android:label="@string/title_activity_main2"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN2ACTIVITY" />
 
@@ -44,7 +52,7 @@
         <activity
             android:name=".Main3Activity"
             android:label="@string/title_activity_main3"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN3ACTIVITY" />
 
@@ -54,7 +62,7 @@
         <activity
             android:name=".MainSpinnerActivity"
             android:label="@string/title_activity_main_spinner"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAINSPINNERACTIVITY" />
 
@@ -64,7 +72,7 @@
         <activity
             android:name=".MainToggleActivity"
             android:label="@string/title_activity_main_toggle"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAINTOGGLEACTIVITY" />
 
@@ -74,7 +82,7 @@
         <activity
             android:name=".MainScrollViewActivity"
             android:label="@string/title_activity_main_scroll_view"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAINSCROLLVIEWACTIVITY" />
 
@@ -84,7 +92,7 @@
         <activity
             android:name=".MainHorizontalScrollViewActivity"
             android:label="@string/title_activity_main_horizontal_scroll_view"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAINHORIZONTALSCROLLVIEWACTIVITY" />
 
@@ -94,7 +102,7 @@
         <activity
             android:name=".MainCuadroDialogoActivity"
             android:label="@string/title_activity_main_cuadro_dialogo"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAINCUADRODIALOGOACTIVITY" />
 
@@ -104,7 +112,7 @@
         <activity
             android:name=".MainDialogImageActivity"
             android:label="@string/title_activity_main_dialog_image"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAINDIALOGIMAGEACTIVITY" />
 
@@ -114,7 +122,7 @@
         <activity
             android:name=".MainCheckBoxActivity"
             android:label="@string/title_activity_main_check_box"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAINCHECKBOXACTIVITY" />
 
@@ -124,7 +132,7 @@
         <activity
             android:name=".MainAutocompletedTVActivity"
             android:label="@string/title_activity_main_autocompleted_tv"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAINAUTOCOMPLETEDTVACTIVITY" />
 
@@ -136,7 +144,7 @@
             android:configChanges="orientation|keyboardHidden"
             android:label="@string/title_activity_main_horizontal"
             android:screenOrientation="landscape"
-            android:theme="@style/AppTheme.NoActionBar"> <!-- - fuerza a que se vea en horizontal -->
+            android:theme="@style/AppTheme.NoActionBar" > <!-- - fuerza a que se vea en horizontal -->
             <intent-filter>
                 <action android:name="android.intent.action.MAINHORIZONTALACTIVITY" />
 
@@ -148,7 +156,7 @@
             android:configChanges="orientation|keyboardHidden"
             android:label="@string/title_activity_main_vertical"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAINVERTICALACTIVITY" />
 
@@ -158,7 +166,7 @@
         <activity
             android:name=".MainPermisosActivity"
             android:label="@string/title_activity_main_permisos"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAINPERMISOSACTIVITY" />
 
@@ -168,7 +176,7 @@
         <activity
             android:name=".MainListViewActivity"
             android:label="@string/title_activity_main_list_view"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAINLISTVIEWACTIVITY" />
 
@@ -178,7 +186,7 @@
         <activity
             android:name=".MainListViewCustomActivity"
             android:label="@string/title_activity_main_list_view_custom"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAINLISTVIEWCUSTOMACTIVITY" />
 
@@ -188,7 +196,7 @@
         <activity
             android:name=".MainWebViewActivity"
             android:label="@string/title_activity_main_web_view"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAINWEBVIEWACTIVITY" />
 
@@ -198,7 +206,7 @@
         <activity
             android:name=".MainWebHtmlActivity"
             android:label="@string/title_activity_main_web_html"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAINWEBHTMLACTIVITY" />
 
@@ -208,7 +216,7 @@
         <activity
             android:name=".MainMediaPlayerActivity"
             android:label="@string/title_activity_main_media_player"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAINMEDIAPLAYERACTIVITY" />
 
@@ -218,7 +226,7 @@
         <activity
             android:name=".MainTableLayoutActivity"
             android:label="@string/title_activity_main_table_layout"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAINTABLELAYOUTACTIVITY" />
 
@@ -228,7 +236,7 @@
         <activity
             android:name=".MainTextWatcherActivity"
             android:label="@string/title_activity_main_text_watcher"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAINTEXTWATCHERACTIVITY" />
 
@@ -238,7 +246,7 @@
         <activity
             android:name=".MainAutocompletedTV2Activity"
             android:label="@string/title_activity_main_autocompleted_tv2"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAINAUTOCOMPLETEDTV2ACTIVITY" />
 
@@ -252,7 +260,7 @@
         <activity
             android:name=".MainPaintCanvasActivity"
             android:label="@string/title_activity_main_paint_canvas"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAINPAINTCANVASACTIVITY" />
 
@@ -262,7 +270,7 @@
         <activity
             android:name=".MainButterKnifeActivity"
             android:label="@string/title_activity_main_butter_knife"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAINBUTTERKNIFEACTIVITY" />
 
@@ -272,7 +280,7 @@
         <activity
             android:name=".MainVibradorActivity"
             android:label="@string/title_activity_main_vibrador"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAINVIBRATORACTIVITY" />
 
@@ -282,7 +290,7 @@
         <activity
             android:name=".MainVibradorRitmicoActivity"
             android:label="@string/title_activity_main_vibrador_ritmico"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAINVIBRATORRITMICOACTIVITY" />
 
@@ -292,7 +300,7 @@
         <activity
             android:name=".MainLinternaActivity"
             android:label="@string/title_activity_main_linterna"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAINLINTERNAACTIVITY" />
 
@@ -302,7 +310,7 @@
         <activity
             android:name=".MainEstilosActivity"
             android:label="@string/title_activity_main_estilos"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAINESTILOSACTIVITY" />
 
@@ -312,7 +320,7 @@
         <activity
             android:name=".MainTemasActivity"
             android:label="@string/title_activity_main_temas"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAINTEMASACTIVITY" />
 
@@ -328,15 +336,34 @@
         <activity
             android:name=".MainVideoViewActivity"
             android:label="@string/title_activity_main_video_view"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAINVIDEOVIEWACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".MainDatePickerActivity"
             android:label="@string/title_activity_main_date_picker"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAINDATEPICKERACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".MainRatingBarActivity"
             android:label="@string/title_activity_main_rating_bar"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAINRATINGBARACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
     </application>
 
 </manifest>
